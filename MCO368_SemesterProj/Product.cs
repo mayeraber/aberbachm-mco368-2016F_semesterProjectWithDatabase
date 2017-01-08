@@ -8,17 +8,13 @@ namespace MCO368_SemesterProj
 {
     public class Product
     {
-        private string prodName;
-        private double price;
+        public double Price { get; set; }
+        public string ProdName { get; }
 
-        public Product(string prodName, double price)
+        public Product(string prodNam, double pric)
         {
-            ProdName = prodName;
-            Price = price;
+            ProdName = prodNam;
+            Price = pric;
         }
-
-        public string ProdName { get; set; }
-        public  double Price { get; set; }
-    
     }
 }

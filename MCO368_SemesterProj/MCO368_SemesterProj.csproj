@@ -58,6 +58,18 @@
     <Compile Include="Catalog.Designer.cs">
       <DependentUpon>Catalog.cs</DependentUpon>
     </Compile>
+    <Compile Include="HistoryByDate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryByDate.Designer.cs">
+      <DependentUpon>HistoryByDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryByPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryByPrice.Designer.cs">
+      <DependentUpon>HistoryByPrice.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     </Compile>
     <Compile Include="PriorPurchases.Designer.cs">
       <DependentUpon>PriorPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PriorPurchasesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PriorPurchasesList.Designer.cs">
+      <DependentUpon>PriorPurchasesList.cs</DependentUpon>
     </Compile>
     <Compile Include="Product.cs" />
     <Compile Include="Purchase.cs" />
@@ -91,8 +109,20 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="HistoryByDate.resx">
+      <DependentUpon>HistoryByDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryByPrice.resx">
+      <DependentUpon>HistoryByPrice.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriorPurchases.resx">
+      <DependentUpon>PriorPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PriorPurchasesList.resx">
+      <DependentUpon>PriorPurchasesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

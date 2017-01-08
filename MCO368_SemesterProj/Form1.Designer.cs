@@ -53,6 +53,7 @@
             this.passwordEntry.Size = new System.Drawing.Size(138, 33);
             this.passwordEntry.TabIndex = 2;
             this.passwordEntry.Text = "";
+            this.passwordEntry.TextChanged += new System.EventHandler(this.passwordEntry_TextChanged);
             // 
             // UsernameLabel
             // 

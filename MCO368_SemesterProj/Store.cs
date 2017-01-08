@@ -14,7 +14,7 @@ namespace MCO368_SemesterProj
         public Store(IEnumerable<User> users, IEnumerable<Product> products)
         {
             this.users = new List<User>(users);
-            this.products = new List<Product>();
+            this.products = new List<Product>(products);
         }
 
         public Store()
@@ -30,9 +30,16 @@ namespace MCO368_SemesterProj
             return null;
         }
 
-        public IEnumerable<Product> getProducts()
+        public Product getProduct(string prodName)
         {
-            return products;
+            if (products.Any(u => u.ProdName == prodName))
+                return products.FirstOrDefault(u => u.ProdName == prodName);
+            return null;
+        }
+
+        public List<Product> getProducts()
+        {
+            return (List<Product>)products;
         }
     }
 }

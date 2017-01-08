@@ -25,14 +25,26 @@ namespace MCO368_SemesterProj
         {
             Form f1 = new AcountBalance(user);
             f1.Visible = true;
-            this.Visible = false;
+           // this.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form f1 = new Catalog(store);
+            Form f1 = new Catalog(store,user);
             f1.Visible = true;
-            this.Visible = false;
+            //this.Visible = false;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form f1 = new PriorPurchases(user);
+            f1.Visible = true;
+            //Visible = false;
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
