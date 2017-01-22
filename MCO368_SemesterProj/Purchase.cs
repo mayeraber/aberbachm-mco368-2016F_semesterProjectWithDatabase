@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,6 +9,7 @@ namespace MCO368_SemesterProj
 {
     public class Purchase
     {
+        public int id { get; set; }
         public DateTime DatePurchased { get; set; }
         public Product ProdPurchased { get; set; }
         public int Quantity { get; set; }

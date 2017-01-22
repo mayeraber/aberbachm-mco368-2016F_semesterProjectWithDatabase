@@ -14,10 +14,8 @@ namespace MCO368_SemesterProj
     {
         private IEnumerable<Purchase> purchases;
         public PriorPurchasesList(IEnumerable<Purchase> purchases )
-        {
-            //this.purchases = purchases;
+        { 
             InitializeComponent();
-            //listView1.View=View.Details;
             listView1.Columns.Add("Product", 60);
             listView1.Columns.Add("Quantity", 65);
             listView1.Columns.Add("Total Price", 70);
